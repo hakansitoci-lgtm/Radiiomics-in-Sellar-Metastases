@@ -1,3 +1,12 @@
+# =============================================================================
+# PyRadiomics Parameter File
+# =============================================================================
+# Study: Radiomics-based Differentiation of Pituitary Adenomas from 
+#        Sellar Metastases on T1-weighted Contrast-enhanced MRI
+# Software: 3D Slicer 5.6.2 with SlicerRadiomics Extension
+# PyRadiomics Version: 3.1.0.post2+g146e3bd
+# =============================================================================
+
 imageType:
   Original: {}
   LoG:
@@ -11,13 +20,23 @@ featureClass:
   glrlm: []
   glszm: []
   ngtdm: []
+  shape: []
   shape2D: []
 
 setting:
   binWidth: 10
   resampledPixelSpacing: [1.0, 1.0, 1.0]
   interpolator: sitkBSpline
+  symmetricalGLCM: true
   label: 1
   normalize: false
   preCrop: false
   removeOutliers: 0.0001
+
+# =============================================================================
+# Reference:
+# van Griethuysen JJM, et al. Computational Radiomics System to Decode the 
+# Radiographic Phenotype. Cancer Res. 2017;77(21):e104-e107.
+# =============================================================================
+
+
